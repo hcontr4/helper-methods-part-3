@@ -5,7 +5,7 @@
 <hr>
 
 <div>
-  <%= link_to "Add a new movie", new_movie_path %>
+  <%= link_to "Add a new movie", new_movie_path, class: "btn btn-info" %>
 </div>
 
 <hr>
@@ -22,6 +22,10 @@
 
     <th>
       Description
+    </th>
+
+    <th>
+      Image URL
     </th>
 
     <th>
@@ -48,6 +52,10 @@
 
     <td>
       <%= movie.description %>
+    </td>
+
+    <td>
+      <%= movie.image_url %>
     </td>
 
     <td>
